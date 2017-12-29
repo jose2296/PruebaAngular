@@ -1,0 +1,65 @@
+.cartas {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.carta {
+  box-sizing: border-box;
+  padding: 1rem;
+  width: 100%;
+}
+
+.carta-body {
+  padding: 1rem
+}
+
+p {
+  margin: 0
+}
+
+.enlaceProducto {
+  cursor: pointer;
+}
+
+.interior {
+  background: white;
+}
+
+.carta img {
+  width: 100%;
+}
+
+@media screen and (min-width: 540px) {
+  .carta {
+    width: calc((100% / 2));
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .carta {
+    width: calc((100% / 3));
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .carta {
+    width: calc((100% / 4));
+  }
+}
+
+.precio {
+  text-align: right;
+}
+
+.precio span {
+  padding-right: 1rem;
+}
+
+.cargando {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}

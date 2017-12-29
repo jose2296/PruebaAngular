@@ -1,0 +1,117 @@
+/* nav ul {
+  list-style-type: none;
+  display: flex;
+  background: black;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  text-align: center;
+  padding: 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+} */
+
+#logo {
+  font-size: 2rem
+}
+
+nav ul li a.activo {
+  /* color: red; */
+  font-weight: bold;
+}
+
+.collapse.show {
+  border-top: 1px solid #333;
+}
+
+/* Estilos parael boton que despliega el menu en movil... */
+
+#toggle-menu {
+  cursor: pointer;
+  outline: 0
+}
+
+.menu-icon span, .menu-icon:before, .menu-icon:after, .example-2 span:before, .example-2 span:after, .example-4 span:before, .example-8 span:before, .example-8 span:after, .example-9 span:before, .example-9 span:after {
+  /* display: block; */
+  position: absolute;
+  top: 50%;
+  left: 0.125em;
+  background-color: #333;
+  width: 0.75em;
+  height: 0.05em;
+  border-radius: 0;
+}
+
+.menu-icon {
+  font-size: 3rem;
+  width: 1em;
+  height: 1em;
+  /* display: inline-block; */
+  position: relative;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  margin-top: -0.025em;
+}
+
+.menu-icon:before {
+  content: "";
+  margin-top: -0.275em;
+}
+
+.menu-icon:after {
+  content: "";
+  margin-top: 0.225em;
+}
+
+.example-1 span {
+  -webkit-transition: 0.2s ease-in-out 0.2s;
+  transition: 0.2s ease-in-out 0.2s;
+}
+
+.example-1:before, .example-1:after {
+  -webkit-transition: margin 0.2s ease-in-out 0.2s, -webkit-transform 0.2s ease-in-out 0s;
+  transition: margin 0.2s ease-in-out 0.2s, -webkit-transform 0.2s ease-in-out 0s;
+  transition: margin 0.2s ease-in-out 0.2s, transform 0.2s ease-in-out 0s;
+  transition: margin 0.2s ease-in-out 0.2s, transform 0.2s ease-in-out 0s, -webkit-transform 0.2s ease-in-out 0s;
+}
+
+.example-1.is-open span {
+  background-color: rgba(221, 150, 186, 0);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.example-1.is-open:before, .example-1.is-open:after {
+  margin-top: 0;
+  -webkit-transition-delay: 0s, 0.25s, 0.25s;
+  transition-delay: 0s, 0.25s, 0.25s;
+}
+
+.example-1.is-open:before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.example-1.is-open:after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/*Fin estilos boton menu*/

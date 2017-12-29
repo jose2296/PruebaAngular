@@ -1,0 +1,127 @@
+<!-- <h1>Productos</h1>
+
+<table class="table table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th>Editar</th>
+      <th>Producto</th>
+      <th>Precio</th>
+      <th>Descripcion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let producto of productos">
+      <td><a [routerLink]="['/producto', producto.id]">Editar</a></td>
+      <td>{{ producto.nombre }}</td>
+      <td>{{ producto.precio }}</td>
+      <td>{{ producto.descripcion }}</td>
+    </tr>
+  </tbody>
+
+</table> -->
+
+<!-- <div class="card-columns">
+  <div class="card" *ngFor="let producto of productos">
+    <img class="card-img-top" src="assets/img/{{ producto.imagen }}" alt="Card image cap">
+    <div class="card-body">
+      <h4 class="card-title">{{ producto.nombre }}</h4>
+      <p class="card-text">{{ producto.descripcion }}</p>
+    </div>
+    <div class="card-footer precio">
+      <span>{{ producto.precio }}€</span>
+      <button type="button" class="btn btn-outline-primary">Comprar</button>
+    </div>
+  </div>
+</div>
+ -->
+<div *ngIf="cargados">
+  <div class="cartas">
+    <div class="carta" *ngFor="let producto of productos">
+      <div class="interior">
+        <div class="enlaceProducto" [routerLink]="['/producto', producto.id]">
+          <img class="carta-img-top" src="assets/img/{{ producto.imagen }}" alt="Card image cap">
+          <div class="carta-body">
+            <h4 class="carta-title">{{ producto.nombre }}</h4>
+            <p class="carta-text">{{ producto.descripcion }}</p>
+          </div>
+        </div>
+
+        <div class="card-footer precio">
+          <span>{{ producto.precio }}€</span>
+          <button type="button" class="btn btn-outline-primary" (click)="addProductoCarro(producto.id)">Comprar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="cargando" *ngIf="!cargados">
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="64" height="64" fill="white">
+      <circle cx="16" cy="3" r="0">
+        <animate attributeName="r" values="0;3;0;0" dur="1s" repeatCount="indefinite"
+          begin="0"
+          keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8"
+          calcMode="spline"
+        />
+      </circle>
+      <circle transform="rotate(45 16 16)" cx="16" cy="3" r="0">
+        <animate attributeName="r" values="0;3;0;0" dur="1s" repeatCount="indefinite"
+          begin="0.125s"
+          keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8"
+          calcMode="spline"
+        />
+      </circle>
+      <circle transform="rotate(90 16 16)" cx="16" cy="3" r="0">
+        <animate attributeName="r" values="0;3;0;0" dur="1s" repeatCount="indefinite"
+          begin="0.25s"
+          keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8"
+          calcMode="spline"
+        />
+      </circle>
+      <circle transform="rotate(135 16 16)" cx="16" cy="3" r="0">
+        <animate attributeName="r" values="0;3;0;0" dur="1s" repeatCount="indefinite"
+          begin="0.375s"
+          keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8"
+          calcMode="spline"
+        />
+      </circle>
+      <circle transform="rotate(180 16 16)" cx="16" cy="3" r="0">
+        <animate attributeName="r" values="0;3;0;0" dur="1s" repeatCount="indefinite"
+          begin="0.5s"
+          keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8"
+          calcMode="spline"
+        />
+      </circle>
+      <circle transform="rotate(225 16 16)" cx="16" cy="3" r="0">
+        <animate attributeName="r" values="0;3;0;0" dur="1s" repeatCount="indefinite"
+          begin="0.625s"
+          keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8"
+          calcMode="spline"
+        />
+      </circle>
+      <circle transform="rotate(270 16 16)" cx="16" cy="3" r="0">
+        <animate attributeName="r" values="0;3;0;0" dur="1s" repeatCount="indefinite"
+          begin="0.75s"
+          keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8"
+          calcMode="spline"
+        />
+      </circle>
+      <circle transform="rotate(315 16 16)" cx="16" cy="3" r="0">
+        <animate attributeName="r" values="0;3;0;0" dur="1s" repeatCount="indefinite"
+          begin="0.875s"
+          keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8"
+          calcMode="spline"
+        />
+      </circle>
+      <circle transform="rotate(180 16 16)" cx="16" cy="3" r="0">
+        <animate attributeName="r" values="0;3;0;0" dur="1s" repeatCount="indefinite"
+          begin="0.5s"
+          keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8"
+          calcMode="spline"
+        />
+      </circle>
+    </svg>
+
+</div>

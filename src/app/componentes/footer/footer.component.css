@@ -1,0 +1,10 @@
+footer{
+    display: flex;
+    background: #898592;
+
+}
+
+footer > div{
+    flex: 1;
+    padding: 2rem;
+}

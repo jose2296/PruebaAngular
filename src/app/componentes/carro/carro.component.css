@@ -1,0 +1,35 @@
+.producto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem;
+}
+
+.producto>* {
+  flex: 1;
+  text-align: center;
+}
+
+.producto .imagen {}
+
+.producto img {
+  /*padding: 1rem;*/
+  width: 50%;
+}
+
+.total {
+  padding: 1rem 2rem;
+  text-align: right;
+}
+
+
+
+
+.cargando {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
