@@ -1,0 +1,65 @@
+{
+  "productos": [{
+      "descripcion": "asdadadasdasdadadas",
+      "id": 0,
+      "imagen": "jquery.png",
+      "nombre": "Uno",
+      "precio": 10
+    },
+    {
+      "descripcion": "aasda2",
+      "id": 1,
+      "imagen": "js.png",
+      "nombre": "Dos",
+      "precio": 20
+    },
+    {
+      "descripcion": "Descripcion id 2",
+      "id": 2,
+      "imagen": "Vue.png",
+      "nombre": "Tres",
+      "precio": 30
+    },
+    {
+      "descripcion": "Descripcion id 3",
+      "id": 3,
+      "imagen": "React.png",
+      "nombre": "Cuatro",
+      "precio": 40
+    },
+    {
+      "descripcion": "Descripcion id 4",
+      "id": 4,
+      "imagen": "Python.png",
+      "nombre": "Cinco",
+      "precio": 50
+    },
+    {
+      "descripcion": "Descripcion id 5",
+      "id": 5,
+      "imagen": "node.png",
+      "nombre": "Seis",
+      "precio": 60
+    },
+    {
+      "descripcion": "Descripcion id 2",
+      "id": 6,
+      "imagen": "React.png",
+      "nombre": "Tres",
+      "precio": 70
+    }, {
+      "descripcion": "asdadadasdasdadadas",
+      "id": 7,
+      "imagen": "jquery.png",
+      "nombre": "Uno",
+      "precio": 80
+    },
+    {
+      "descripcion": "DEsc asdasdasd",
+      "id": 8,
+      "imagen": "js.png",
+      "nombre": "Dos",
+      "precio": 90
+}
+  ]
+}
