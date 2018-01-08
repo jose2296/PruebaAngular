@@ -6,14 +6,16 @@
   <div class="card" *ngIf="productosCarro">
     <div class="producto" *ngFor="let producto of productosCarro">
         <div class="imagen">
-          <img src="assets/img/{{ producto.imagen }}" alt="">
+          <a class="enlaceProducto" [routerLink]="['/producto', producto.id]">
+            <img src="assets/img/{{ producto.imagen }}" alt="">
+          </a>
         </div>
         <h4>{{producto.nombre}}</h4>
         <p>id: {{producto.id}}</p>
         <p>Cantidad: {{arrayProdsCarroCant[producto.id]}}</p>
         <p>{{producto.precio}}€</p>
 
-        <button type="button" class="btn btn-danger" (click)="eliminarProducto(producto.id)">Danger</button>
+        <button type="button" class="btn btn-danger" (click)="eliminarProducto(producto.id)">Eliminar</button>
       </div>
     </div>
     <div class="card">

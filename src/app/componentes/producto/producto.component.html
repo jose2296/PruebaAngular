@@ -9,8 +9,11 @@
         <div class=""><img src="assets/img/{{ producto.imagen }}" alt=""></div>
         <p> Precio: {{producto.precio}}</p>
         <p> Descripcion: {{producto.descripcion}}</p>
-      </div>
 
+      <button type="button" class="btn btn-outline-primary" (click)="addProductoCarro(producto.id)">Comprar</button>
+      
+      </div>
+      
     </div>
 
   </div>

@@ -26,8 +26,11 @@ cargados:boolean = false;
   }*/
 
   constructor(_ds:DataserviceService,private _cs:CarroService){
-    _ds.productos.valueChanges().subscribe(data=>this.productos = data);
-    this.cargados = true;
+    _ds.productos.valueChanges().subscribe(data=>{
+      this.productos = data;
+      this.cargados = true;
+      this._cs.setProductosCarroService(localStorage.getItem("carro").split(",").length);
+    })
   }
 
 
